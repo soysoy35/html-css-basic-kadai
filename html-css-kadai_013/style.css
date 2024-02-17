@@ -1,0 +1,151 @@
+/* PC、スマホ共通スタイル */
+body {
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+      sans-serif;
+  }
+  
+  p {
+    font-size: 15px;
+  }
+  
+  #main-visual>img {
+    width: 100%;
+  }
+  
+  /*================
+  PC用のスタイル 
+  =================*/
+  @media screen and (min-width: 768px) {
+    /* 横幅設定 */
+    body {
+      max-width: 1080px;
+      min-width: 960px;
+      margin: 0 auto;
+    }
+  
+    /* ヘッダー */
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    /* ナビゲーションのレイアウト */
+    #nav-pc {
+      text-align: right;
+      font-size: 14px;
+      padding-top: 15px;
+    }
+  
+    /* ナビゲーションのリンクの装飾設定 */
+    #nav-pc>a {
+      text-decoration: none;
+      margin-left: 20px;
+    }
+  
+    #nav-pc>a:link {
+      color: #0d0d0d;
+    }
+  
+    #nav-pc>a:visited {
+      color: #0d0d0d;
+    }
+  
+    #nav-pc>a:hover {
+      color: #0d0d0d;
+      text-decoration: underline;
+    }
+  
+    #nav-pc>a:active {
+      color: #0d0d0d;
+    }
+  
+    /* SPのナビゲーションを非表示に */
+    #menu-sp {
+      display: none;
+    }
+  
+    #nav-sp {
+      display: none;
+    }
+  }
+  
+  /*================
+  SP用のスタイル 
+  =================*/
+  @media screen and (max-width: 767px) {
+    body {
+      min-width: 375px;
+      margin: 0;
+    }
+  
+    /* PC用ナビゲーションを非表示 */
+    #nav-pc {
+      display: none;
+    }
+  
+    /* ハンバーガーメニューのスタイル */
+    #menu-sp {
+      float: right;
+      padding: 0;
+    }
+  
+    /* スマホ用ナビゲーションのスタイル */
+    #nav-sp {
+      background-color: #ce933e;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: none;
+      z-index: 100;
+    }
+  
+    /* 閉じるボタンのスタイル */
+    #close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  
+    /* ナビゲーションメニュー用ロゴのスタイル */
+    #logo-sp {
+      margin: 80px 0 30px 20px;
+    }
+  
+    /* ナビゲーションリンクのスタイル */
+    #nav-sp > a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  
+    #nav-sp > a:link {
+      color: #ffffff;
+    }
+  
+    #nav-sp > a:visited {
+      color: #ffffff;
+    }
+  
+    #nav-sp > a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  
+    #nav-sp > a:active {
+      color: #ffffff;
+    }
+  
+    /* メニュー項目のスタイル */
+    #nav-sp > .menu {
+      display: block;
+      margin: 20px;
+      height: 44px;
+      font-size: 16px;
+      background-image: url("images/arrow.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+  }
+  
